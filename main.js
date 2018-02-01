@@ -6,6 +6,10 @@ function jsonResume() {
   window.open ('santosh_resume.html','_self',false)
 
 }
+function level3Resume() {
+  window.open ('jsonResume.html','_self',false)
+
+}
 
 function results() {
   fname = document.getElementById("fname").value;
@@ -32,7 +36,7 @@ function results() {
 
   //usage:
   loadJSON("resources/data.json", function(text){
-    let data = JSON.parse(text);
+      let data = JSON.parse(text);
     console.log(data);
     Phone(data.basics.phone);
     name(data.basics.name);
